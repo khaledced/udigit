@@ -24,12 +24,16 @@ Site web moderne et responsive pour l'agence Udigit, inspiré du design de KOTA 
 src/
 ├── components/          # Composants réutilisables
 │   ├── Navbar.jsx      # Navigation principale
-│   └── Footer.jsx      # Pied de page
+│   ├── Footer.jsx      # Pied de page
+│   ├── Button.jsx      # Composant bouton
+│   ├── Icon.jsx        # Composant icône
+│   └── BlogArticle.jsx # Composant article de blog
 ├── pages/              # Pages de l'application
 │   ├── Home.jsx        # Page d'accueil
 │   ├── Services.jsx    # Page services
 │   ├── About.jsx       # Page à propos
-│   └── Projects.jsx    # Page projets
+│   ├── Projects.jsx    # Page projets
+│   └── Blog.jsx        # Page blog
 ├── App.jsx             # Composant principal
 ├── main.jsx            # Point d'entrée
 └── index.css           # Styles globaux
@@ -39,8 +43,8 @@ src/
 
 1. **Cloner le projet**
    ```bash
-   git clone [url-du-repo]
-   cd udigit-website
+   git clone https://github.com/khaledced/udigit.git
+   cd udigit
    ```
 
 2. **Installer les dépendances**
@@ -58,6 +62,23 @@ src/
    http://localhost:5173
    ```
 
+## 🚀 Déploiement sur Vercel
+
+Ce projet est configuré pour être déployé sur Vercel :
+
+1. **Connecter le repository GitHub à Vercel**
+   - Allez sur [vercel.com](https://vercel.com)
+   - Connectez-vous avec votre compte GitHub
+   - Importez le repository `khaledced/udigit`
+
+2. **Configuration automatique**
+   - Vercel détectera automatiquement que c'est un projet Vite
+   - Le fichier `vercel.json` configure le déploiement
+
+3. **Déploiement automatique**
+   - Chaque push sur la branche `main` déclenche un nouveau déploiement
+   - Les previews sont créées pour chaque pull request
+
 ## 📱 Fonctionnalités
 
 ### Pages Disponibles
@@ -65,68 +86,32 @@ src/
 - **Services** : Détail des services offerts (Design, Développement, Branding, Marketing)
 - **À Propos** : Histoire et valeurs de l'agence
 - **Projets** : Galerie des réalisations avec filtres par catégorie
+- **Blog** : Articles et actualités sur le digital et l'innovation
 
-### Animations
-- Animations d'entrée fluides avec Framer Motion
-- Effets de hover et interactions
-- Transitions de page
-- Animations au scroll (scroll-triggered)
+### Fonctionnalités Avancées
+- **Animations fluides** avec Framer Motion
+- **Design responsive** pour tous les appareils
+- **Navigation intuitive** avec React Router
+- **Performance optimisée** avec Vite
+- **SEO friendly** avec meta tags et structure sémantique
 
-### Responsive Design
-- Design mobile-first
-- Adaptation parfaite sur tous les écrans
-- Navigation mobile avec menu hamburger
+## 🎯 Services Proposés
 
-## 🎯 Caractéristiques Techniques
-
-- **Performance** : Optimisé avec Vite
-- **SEO** : Métadonnées et structure sémantique
-- **Accessibilité** : Respect des standards WCAG
-- **Cross-browser** : Compatible avec tous les navigateurs modernes
-
-## 🚀 Déploiement
-
-### Vercel (Recommandé)
-1. Connecter le repository GitHub à Vercel
-2. Configurer automatiquement
-3. Déploiement automatique à chaque push
-
-### Autres plateformes
-- Netlify
-- GitHub Pages
-- Firebase Hosting
-
-## 📝 Scripts Disponibles
-
-```bash
-npm run dev          # Serveur de développement
-npm run build        # Build de production
-npm run preview      # Prévisualiser le build
-npm run lint         # Vérification du code
-```
-
-## 🎨 Personnalisation
-
-### Couleurs
-Modifier les couleurs dans `tailwind.config.js` :
-```javascript
-colors: {
-  'udigit-orange': '#F18440',
-  'udigit-blue': '#2A4B9B',
-}
-```
-
-### Contenu
-- Modifier le contenu dans les fichiers des pages
-- Ajouter de nouveaux projets dans `Projects.jsx`
-- Personnaliser les services dans `Services.jsx`
+- **Maintenance Informatique** : Support technique et optimisation
+- **Développement Web** : Sites web et applications modernes
+- **Branding & Identité** : Identité visuelle et stratégie de marque
+- **Marketing Digital** : Stratégies marketing et gestion des réseaux sociaux
 
 ## 📞 Contact
 
-Pour toute question ou modification :
-- Email : udigit.services@gmail.com
-- Téléphone : +226 71 78 47 21
+- **WhatsApp** : +226 71 78 47 21
+- **Email** : contact@udigit.bf
+- **Site Web** : [udigit.bf](https://udigit.bf)
 
 ## 📄 Licence
 
-© 2024 Udigit. Tous droits réservés.
+Ce projet est sous licence MIT. Voir le fichier `LICENSE` pour plus de détails.
+
+---
+
+**Udigit** - Transformons votre vision en réalité digitale 🚀
